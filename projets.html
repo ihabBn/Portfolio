@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO - Projets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec barre de navigation -->
+    <header>
+        <div class="logo">
+            <h1>Portfolio<span>SIO</span></h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Mes Projets</h1>
+                <p>Découvrez les projets réalisés durant ma formation</p>
+            </div>
+        </section>
+
+        <section class="projets-container">
+            <div class="container">
+                <div class="projets-tabs">
+                    <button class="tab-btn active" data-category="all">Tous les projets</button>
+                    <button class="tab-btn" data-category="ap">Ateliers de Professionnalisation</button>
+                    <button class="tab-btn" data-category="stage">Stages</button>
+                    <button class="tab-btn" data-category="perso">Projets personnels</button>
+                    <button class="tab-btn" data-category="engagement">Engagement étudiant</button>
+                </div>
+
+                <div class="projets-grid" id="projets-grid">
+                    <!-- AP0 - Portfolio -->
+                    <div class="projet-card" data-category="ap" id="ap0">
+                        <div class="projet-image" style="background-image: url('images/projet-portfolio.jpg');">
+                            <div class="projet-badge">AP0</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Site portefeuille de compétences</h3>
+                            <p>Création d'un portfolio en ligne pour présenter mon parcours et mes compétences</p>
+                            <div class="projet-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Responsive</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap0-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- AP1 - Site statique -->
+                    <div class="projet-card" data-category="ap" id="ap1">
+                        <div class="projet-image" style="background-image: url('images/projet-maison-culture.jpg');">
+                            <div class="projet-badge">AP1</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Maison de la Culture</h3>
+                            <p>Développement d'un site statique pour une maison de la culture</p>
+                            <div class="projet-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap1-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- AP2 - Site dynamique -->
+                    <div class="projet-card" data-category="ap" id="ap2">
+                        <div class="projet-image" style="background-image: url('images/projet-database.jpg');">
+                            <div class="projet-badge">AP2</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Dynamisation du site</h3>
+                            <p>Ajout de fonctionnalités dynamiques et d'une base de données</p>
+                            <div class="projet-tags">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap2-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- AP3 - Site dynamique avancé -->
+                    <div class="projet-card" data-category="ap" id="ap3">
+                        <div class="projet-image" style="background-image: url('images/projet-ap3.jpg');">
+                            <div class="projet-badge">AP3</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Site dynamique avancé</h3>
+                            <p>Application web avancée avec web services et framework Laravel</p>
+                            <div class="projet-tags">
+                                <span>Laravel</span>
+                                <span>PHP</span>
+                                <span>API REST</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap3-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- AP4 - Application mobile Android -->
+                    <div class="projet-card" data-category="ap" id="ap4">
+                        <div class="projet-image" style="background-image: url('images/projet-ap4.jpg');">
+                            <div class="projet-badge">AP4</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Application mobile Android</h3>
+                            <p>Développement d'une application mobile Android sur le contexte du projet</p>
+                            <div class="projet-tags">
+                                <span>Android</span>
+                                <span>Java</span>
+                                <span>Mobile</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="ap4-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Stage 1ère année -->
+                    <div class="projet-card" data-category="stage" id="stage1">
+                        <div class="projet-image" style="background-image: url('images/projet-stage1.jpg');">
+                            <div class="projet-badge">Stage</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Stage de 1ère année</h3>
+                            <p>Stage en entreprise dans le cadre de la première année de BTS</p>
+                            <div class="projet-tags">
+                                <span>Support</span>
+                                <span>Développement</span>
+                                <span>Base de données</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="stage1-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Stage 2ème année -->
+                    <div class="projet-card" data-category="stage" id="stage2">
+                        <div class="projet-image" style="background-image: url('images/projet-stage2.jpg');">
+                            <div class="projet-badge">Stage</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Stage de 2ème année</h3>
+                            <p>Stage en entreprise dans le cadre de la deuxième année de BTS</p>
+                            <div class="projet-tags">
+                                <span>Développement</span>
+                                <span>Administration</span>
+                                <span>Projet</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="stage2-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Engagement étudiant -->
+                    <div class="projet-card" data-category="engagement" id="engagement1">
+                        <div class="projet-image" style="background-image: url('images/projet-engagement.jpg');">
+                            <div class="projet-badge">Engagement</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Engagement étudiant</h3>
+                            <p>Participation active à la vie étudiante et aux initiatives collectives</p>
+                            <div class="projet-tags">
+                                <span>Travail d'équipe</span>
+                                <span>Initiative</span>
+                                <span>Citoyenneté</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="engagement1-details">Voir détails</button>
+                        </div>
+                    </div>
+
+                    <!-- Projet personnel -->
+                    <div class="projet-card" data-category="perso" id="perso1">
+                        <div class="projet-image" style="background-image: url('images/projet-perso.jpg');">
+                            <div class="projet-badge">Perso</div>
+                        </div>
+                        <div class="projet-content">
+                            <h3>Application de gestion de tâches</h3>
+                            <p>Développement d'une application web de gestion de tâches</p>
+                            <div class="projet-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+                            </div>
+                            <button class="btn primary voir-details" data-target="perso1-details">Voir détails</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Détails des projets (modals) -->
+        <div class="projet-details-overlay" id="projet-details-overlay">
+            <!-- AP0 - Portfolio -->
+            <div class="projet-details" id="ap0-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Site portefeuille de compétences</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Création d'un site portefeuille de compétences (Portfolio)</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Conception et développement d'un site web responsive servant de portefeuille de compétences pour le BTS SIO. Ce site présente mon profil, mon CV, mes compétences en français et en anglais, et mes différents projets réalisés durant ma formation.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Septembre - Octobre 2024</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>HTML5, CSS3, JavaScript, Bootstrap, VS Code, WampServer, FileZilla</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 0 (AP0)</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel avec suivi par les enseignants</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap0-schema.jpg" alt="Schéma du projet AP0">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="documents/ap0/cahier-des-charges.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Cahier des charges</a></li>
+                                <li><a href="documents/ap0/documentation.pdf" target="_blank"><i class="fas fa-book"></i> Documentation technique</a></li>
+                                <li><a href="https://github.com/votre-compte/portfolio" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Développer la présence en ligne de l'organisation</li>
+                            <li>Gérer son identité professionnelle</li>
+                            <li>Exploiter les ressources du cadre applicatif (framework)</li>
+                            <li>Réaliser les tests nécessaires à la validation d'éléments adaptés ou développés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AP1 - Site statique -->
+            <div class="projet-details" id="ap1-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Site statique Maison de la Culture</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Développement d'un site statique pour une Maison de la Culture</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Conception et développement d'un site web statique pour une Maison de la Culture incluant la présentation des activités, événements et informations pratiques. Mise en œuvre d'une interface responsive et ergonomique selon les exigences du client.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Novembre - Décembre 2024</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>HTML5, CSS3, JavaScript, Bootstrap, VS Code, Git, Adobe XD</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 1 (AP1)</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel avec suivi par les enseignants</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap1-schema.jpg" alt="Schéma du projet AP1">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="documents/ap1/cahier-des-charges.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Cahier des charges</a></li>
+                                <li><a href="documents/ap1/maquettes.pdf" target="_blank"><i class="fas fa-paint-brush"></i> Maquettes</a></li>
+                                <li><a href="https://github.com/votre-compte/maison-culture" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                                <li><a href="projets/ap1/" target="_blank"><i class="fas fa-external-link-alt"></i> Site web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Travailler en mode projet</li>
+                            <li>Analyser un besoin exprimé et son contexte juridique</li>
+                            <li>Participer à la conception de l'architecture d'une solution applicative</li>
+                            <li>Développer la présence en ligne de l'organisation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AP2 - Site dynamique -->
+            <div class="projet-details" id="ap2-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Dynamisation du site Maison de la Culture</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Dynamisation du site de la Maison de la Culture</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Évolution du site statique développé lors de l'AP1 vers une solution dynamique avec base de données. Implémentation d'un système de gestion de contenu pour les événements, actualités et réservations en ligne.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Janvier - Février 2025</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>PHP, MySQL, JavaScript, AJAX, VS Code, WampServer, PhpMyAdmin, Merise</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 2 (AP2)</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel avec suivi par les enseignants</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap2-schema.jpg" alt="Schéma du projet AP2">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="documents/ap2/cahier-des-charges.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Cahier des charges</a></li>
+                                <li><a href="documents/ap2/mcd.pdf" target="_blank"><i class="fas fa-database"></i> Modèle Conceptuel de Données</a></li>
+                                <li><a href="https://github.com/votre-compte/maison-culture-dynamique" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                                <li><a href="projets/ap2/" target="_blank"><i class="fas fa-external-link-alt"></i> Site web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Concevoir ou adapter une base de données</li>
+                            <li>Exploiter des données à l'aide d'un langage de requêtes</li>
+                            <li>Développer des fonctionnalités applicatives au sein d'un SGBD</li>
+                            <li>Mettre à disposition des utilisateurs un service informatique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 1ère année -->
+            <div class="projet-details" id="stage1-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Stage de première année</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Stage de première année en entreprise</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Stage de 5 semaines en entreprise permettant de découvrir l'environnement professionnel et de mettre en pratique les compétences acquises. Participation à des projets de développement et support utilisateur.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Mai - Juin 2025</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>PHP, MySQL, JavaScript, Git, VS Code, Suite Office, GLPI</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Entreprise XYZ - Ville</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Stage obligatoire de première année</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel sous la supervision d'un tuteur en entreprise</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/stage1-schema.jpg" alt="Schéma du projet de stage">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="documents/stage1/convention.pdf" target="_blank"><i class="fas fa-file-contract"></i> Convention de stage</a></li>
+                                <li><a href="documents/stage1/rapport.pdf" target="_blank"><i class="fas fa-file-alt"></i> Rapport de stage</a></li>
+                                <li><a href="documents/stage1/attestation.pdf" target="_blank"><i class="fas fa-certificate"></i> Attestation de stage</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Répondre aux incidents et aux demandes d'assistance</li>
+                            <li>Développer la présence en ligne de l'organisation</li>
+                            <li>Travailler en mode projet</li>
+                            <li>Mettre à disposition des utilisateurs un service informatique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AP3 - Site dynamique avancé -->
+            <div class="projet-details" id="ap3-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Site dynamique avancé</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Site dynamique avancé sur contexte Maison de la Culture</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Développement d'une application web avancée intégrant des technologies client/serveur, des web services (API REST) et le framework Laravel. Mise en place d'une architecture MVC complète et d'échanges de données via API.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>À compléter</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>Laravel, PHP, MySQL, JavaScript, API REST, Composer, VS Code</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 3 (AP3)</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail en équipe</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap3-schema.jpg" alt="Schéma du projet AP3">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="documents/ap3/cahier-des-charges.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Cahier des charges</a></li>
+                                <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Mettre en place des composants dans une architecture applicative</li>
+                            <li>Exploiter les technologies Web et les web services</li>
+                            <li>Utiliser des frameworks de développement</li>
+                            <li>Développer des fonctionnalités applicatives</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AP4 - Application mobile Android -->
+            <div class="projet-details" id="ap4-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Application mobile Android</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Application mobile Android sur le contexte du projet</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Conception et développement d'une application mobile native Android permettant d'accéder aux fonctionnalités du système d'information depuis un appareil mobile. Intégration avec le back-end via des API REST.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>À compléter</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>Android Studio, Java, API REST, Git, VS Code</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Atelier de Professionnalisation 4 (AP4)</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail en équipe</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/ap4-schema.jpg" alt="Schéma du projet AP4">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="documents/ap4/cahier-des-charges.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Cahier des charges</a></li>
+                                <li><a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Développer une application mobile</li>
+                            <li>Intégrer une application avec des web services</li>
+                            <li>Adapter une interface utilisateur aux contraintes mobiles</li>
+                            <li>Mettre à disposition des utilisateurs un service informatique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stage 2ème année -->
+            <div class="projet-details" id="stage2-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Stage de deuxième année</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Stage de deuxième année en entreprise</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Stage de fin d'études en entreprise permettant de consolider les compétences acquises au cours des deux années de BTS SIO. Participation à des projets de développement, d'administration système ou de support avancé.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>À compléter</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>À compléter</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>À compléter</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Stage obligatoire de deuxième année</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel sous la supervision d'un tuteur en entreprise</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/stage2-schema.jpg" alt="Schéma du projet de stage 2">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="documents/stage2/convention.pdf" target="_blank"><i class="fas fa-file-contract"></i> Convention de stage</a></li>
+                                <li><a href="documents/stage2/rapport.pdf" target="_blank"><i class="fas fa-file-alt"></i> Rapport de stage</a></li>
+                                <li><a href="documents/stage2/attestation.pdf" target="_blank"><i class="fas fa-certificate"></i> Attestation de stage</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Gérer le patrimoine informatique</li>
+                            <li>Répondre aux incidents et aux demandes d'assistance</li>
+                            <li>Travailler en mode projet</li>
+                            <li>Mettre à disposition des utilisateurs un service informatique</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engagement étudiant -->
+            <div class="projet-details" id="engagement1-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Engagement étudiant</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Engagement étudiant au sein de la formation BTS SIO</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Participation active à la vie étudiante, aux projets collectifs et aux initiatives de la formation. Implication dans des activités favorisant le développement des compétences relationnelles, organisationnelles et citoyennes.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>2024 - 2026</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>Outils collaboratifs, communication, organisation</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Lycée CCI de Nîmes</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Engagement étudiant</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail collectif et initiatives personnelles</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/engagement1-schema.jpg" alt="Engagement étudiant">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="documents/engagement/bilan.pdf" target="_blank"><i class="fas fa-file-alt"></i> Bilan d'engagement</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Organiser son développement professionnel</li>
+                            <li>Travailler en mode projet</li>
+                            <li>Communiquer avec les acteurs du projet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet personnel -->
+            <div class="projet-details" id="perso1-details">
+                <div class="details-header">
+                    <h2>Fiche descriptive : Application de gestion de tâches</h2>
+                    <button class="close-details" data-close="true"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="details-content">
+                    <div class="details-info">
+                        <table class="details-table">
+                            <tr>
+                                <th>Titre de la situation</th>
+                                <td>Développement d'une application web de gestion de tâches</td>
+                            </tr>
+                            <tr>
+                                <th>Descriptif</th>
+                                <td>Conception et développement d'une application web permettant de gérer des tâches personnelles ou professionnelles. Fonctionnalités de création, modification, suppression et classement des tâches avec stockage des données dans le localStorage du navigateur.</td>
+                            </tr>
+                            <tr>
+                                <th>Période de réalisation</th>
+                                <td>Décembre 2024</td>
+                            </tr>
+                            <tr>
+                                <th>Outils utilisés</th>
+                                <td>HTML5, CSS3, JavaScript, VS Code, Git</td>
+                            </tr>
+                            <tr>
+                                <th>Lieu</th>
+                                <td>Domicile</td>
+                            </tr>
+                            <tr>
+                                <th>Cadre de réalisation</th>
+                                <td>Projet personnel</td>
+                            </tr>
+                            <tr>
+                                <th>Mode de réalisation</th>
+                                <td>Travail individuel</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="details-visual">
+                        <div class="details-img">
+                            <img src="images/perso1-schema.jpg" alt="Capture d'écran de l'application">
+                        </div>
+                        <div class="details-links">
+                            <h3>Liens utiles</h3>
+                            <ul>
+                                <li><a href="https://github.com/votre-compte/taskmanager" target="_blank"><i class="fab fa-github"></i> Dépôt GitHub</a></li>
+                                <li><a href="projets/perso1/" target="_blank"><i class="fas fa-external-link-alt"></i> Application en ligne</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-competences">
+                        <h3>Compétences associées</h3>
+                        <ul>
+                            <li>Concevoir et développer une solution applicative</li>
+                            <li>Exploiter les technologies Web</li>
+                            <li>Organiser son développement professionnel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Portfolio<span>SIO</span></h2>
+                <p>BTS Services Informatiques aux Organisations</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="veille.html">Veille</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                 <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i>ihabbenmahrouz@gmail.com</p>
+                <p><i class="fas fa-phone"></i>07 67 00 27 92</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/IBenmahrou8746" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ihabbenmahrouz" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - Portfolio BTS SIO - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript pour les projets -->
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filtrage des projets
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const projetCards = document.querySelectorAll('.projet-card');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Retirer la classe active de tous les boutons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Ajouter la classe active au bouton cliqué
+                    button.classList.add('active');
+                    
+                    // Filtrer les projets
+                    const category = button.getAttribute('data-category');
+                    
+                    projetCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Gestion des modals de détails
+            const detailsButtons = document.querySelectorAll('.voir-details');
+            const detailsOverlay = document.getElementById('projet-details-overlay');
+            const detailsModals = document.querySelectorAll('.projet-details');
+            const closeButtons = document.querySelectorAll('.close-details');
+            
+            detailsButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.getAttribute('data-target');
+                    
+                    // Afficher l'overlay
+                    detailsOverlay.style.display = 'flex';
+                    
+                    // Masquer tous les modals
+                    detailsModals.forEach(modal => {
+                        modal.style.display = 'none';
+                    });
+                    
+                    // Afficher le modal cible
+                    document.getElementById(targetId).style.display = 'block';
+                    
+                    // Bloquer le défilement de la page
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Fermeture des modals
+            closeButtons.forEach(button => {
+                button.addEventListener('click', closeModal);
+            });
+            
+            detailsOverlay.addEventListener('click', (e) => {
+                if (e.target === detailsOverlay || e.target.hasAttribute('data-close')) {
+                    closeModal();
+                }
+            });
+            
+            function closeModal() {
+                detailsOverlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Fermeture avec la touche Échap
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

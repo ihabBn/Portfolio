@@ -1,0 +1,177 @@
+/* competences.css - Styles spécifiques à la page des compétences */
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+    color: white;
+    padding: var(--spacing-lg) 0;
+    position: relative;
+    text-align: center;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/pattern.svg') repeat;
+    opacity: 0.05;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-xs);
+    position: relative;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* ===== COMPETENCES CONTAINER ===== */
+.competences-container {
+    max-width: 1200px;
+    margin: var(--spacing-lg) auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* ===== TABS ===== */
+.competences-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.tab-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    background-color: white;
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+    background-color: #f8f9fa;
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    background-color: #f8f9fa;
+}
+
+/* ===== LANG CONTENT ===== */
+.lang-content {
+    display: none;
+}
+
+.lang-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+/* ===== COMPETENCE BLOC ===== */
+.competence-bloc {
+    margin-bottom: var(--spacing-xl);
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.bloc-title {
+    background-color: var(--dark-color);
+    color: white;
+    padding: var(--spacing-md);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.bloc-title i {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.bloc-content {
+    padding: var(--spacing-md);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* ===== COMPETENCE CARD ===== */
+.competence-card {
+    padding: var(--spacing-md);
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius-md);
+    border-left: 4px solid var(--primary-color);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.competence-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.competence-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+.competence-card ul {
+    padding-left: var(--spacing-md);
+}
+
+.competence-card ul li {
+    margin-bottom: var(--spacing-xs);
+    position: relative;
+}
+
+.competence-card ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media screen and (max-width: 768px) {
+    .bloc-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .competences-tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .tab-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}

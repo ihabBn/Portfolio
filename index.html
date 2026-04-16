@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête avec barre de navigation -->
+    <header>
+        <div class="logo">
+            <h1>Portfolio<span>SIO</span></h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Bienvenue sur mon portfolio</h2>
+                    <h3>Étudiant en BTS SIO</h3>
+                    <p>Passionné par le développement web et la cybersécurité</p>
+                    <div class="hero-buttons">
+                        <a href="profil.html" class="btn primary">Découvrir mon profil</a>
+                        <a href="projets.html" class="btn secondary">Voir mes projets</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <!-- L'image de profil sera ajoutée via le CSS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-info">
+            <div class="info-card">
+                <i class="fas fa-code"></i>
+                <h3>Développement</h3>
+                <p>Création d'applications web et mobiles avec les technologies modernes</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-database"></i>
+                <h3>Base de données</h3>
+                <p>Conception et administration de bases de données relationnelles</p>
+            </div>
+        </section>
+
+        <section class="recent-projects">
+            <h2>Projets récents</h2>
+            <div class="project-gallery">
+                <!-- Les images des projets seront stylisées avec CSS -->
+                <div class="project-card">
+                    <div class="project-image" id="project1"></div>
+                    <div class="project-info">
+                        <h3>Portfolio de compétences</h3>
+                        <p>AP0 - Site web responsive</p>
+                        <a href="projets.html#ap0" class="btn small">Voir détails</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" id="project2"></div>
+                    <div class="project-info">
+                        <h3>Maison de la Culture</h3>
+                        <p>AP1 - Site statique</p>
+                        <a href="projets.html#ap1" class="btn small">Voir détails</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" id="project3"></div>
+                    <div class="project-info">
+                        <h3>Projet en cours</h3>
+                        <p>À venir</p>
+                        <a href="projets.html" class="btn small">Voir détails</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Portfolio<span>SIO</span></h2>
+                <p>BTS Services Informatiques aux Organisations</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="veille.html">Veille</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                 <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i>ihabbenmahrouz@gmail.com</p>
+                <p><i class="fas fa-phone"></i>07 67 00 27 92</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/IhabBenmahrouz" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/IBenmahrou8746" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ihabbenmahrouz" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - Portfolio BTS SIO - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
